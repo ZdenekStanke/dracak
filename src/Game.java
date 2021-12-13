@@ -1,6 +1,8 @@
 import java.io.PrintStream;
 import java.util.Scanner;
-import java.util.SimpleTimeZone;
+import java.io.File;
+
+
 
 public class Game {
     Entity Wiz;
@@ -29,19 +31,22 @@ System.out.println("Ahoj já jsem vypravěč a provedu tě příběhem ");
         System.out.println("Hezká, ale vyvržená středoškolačka je naverbována pro tajnou vládní misi s cílem infiltrovat nepřátelské zařízení, ale padouch je mistrný stratég, který s nimi manipuluje na každém kroku a tvým úkolem je najít a porazit tohoto stratéga!!!!!");
         System.out.println("Zadejte svouj nick");
 
+
         String jk = sc.nextLine();
         return jk;
     }
 
     public Game() {
-        this.Wiz = new Player(jk, "SEXY holka", "Wizzard", 80.0D, 1, 30.0D, 0.0D, 10.0D);
-        this.A = new Player(jk, "Sexy Anděl", "Archer", 150.0D, 1, 15.0D, 0.0D, 10.0D);
-        this.Wa = new Player(jk, "SEXY holka", "Warrior", 200.0D, 10, 10.0D, 0.0D, 10.0D);
+        this.Wiz = new Player(jk, "SEXY holka", "Wizzard", 80.0D, 1, 30.0D, 0.0D, 100.0D);
+        this.A = new Player(jk, "Sexy Anděl", "Archer", 150.0D, 1, 15.0D, 0.0D, 100.0D);
+        this.Wa = new Player(jk, "SEXY holka", "Warrior", 200.0D, 10, 10.0D, 0.0D, 100.0D);
         this.Wizzard();
         this.Archer();
         this.Warrior();
         System.out.println(TEXT_PURPLE +" Abychom jsme se mohli vrhnout na to musíš si vybrat postavu : "+ TEXT_RESET);
         this.game();
+
+
     }
 
     public void Wizzard() {
@@ -206,15 +211,15 @@ System.out.println("Ahoj já jsem vypravěč a provedu tě příběhem ");
         switch(var4) {
             case 0:
                 player = this.Wiz;
-                IOUtil.printText("Vybral sis maga");
+                IOUtil.printText("Vybral sis sexy magainu");
                 break;
             case 1:
                 player = this.A;
-                IOUtil.printText("Vybral sis archer");
+                IOUtil.printText("Vybral sis sexy archerku");
                 break;
             case 2:
                 player = this.Wa;
-                IOUtil.printText("vybral sis warrior");
+                IOUtil.printText("vybral sis sexy warriorku");
                 break;
             default:
                 this.game();
