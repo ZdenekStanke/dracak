@@ -1,31 +1,17 @@
 public class Enemy extends Entity implements IFight {
-
-    public Enemy(String name, int lv, String race, String role, double hp, double mana, double dmg, double money) {
-        super(name, lv, race, role, hp, mana, dmg, money);
+    public Enemy(String name, String race, String role, double hp, int lv, double dmg, double mana, double money) {
+        super(name, race, role, hp, lv, dmg, mana, money);
     }
 
-    @Override
     public void attack() {
-
     }
 
-    @Override
     public void def() {
-
     }
 
-    @Override
     public void dodge() {
-
     }
 
-    @Override
-    public void useItem() {
-
-    }
-
-    @Override
-    public void runAway() {
-
+    public void useItme() {
     }
 }
