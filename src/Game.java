@@ -37,9 +37,9 @@ System.out.println("Ahoj já jsem vypravěč a provedu tě příběhem ");
     }
 
     public Game() {
-        this.Wiz = new Player(jk, "SEXY holka", "Wizzard", 80.0D, 1, 30.0D, 0.0D, 100.0D);
-        this.A = new Player(jk, "Sexy Anděl", "Archer", 150.0D, 1, 15.0D, 0.0D, 100.0D);
-        this.Wa = new Player(jk, "SEXY holka", "Warrior", 200.0D, 10, 10.0D, 0.0D, 100.0D);
+        this.Wiz = new Player(jk, "SEXY holka", "Wizzard", 80.0D, 1, 50.0D, 0.0D, 100.0D);
+        this.A = new Player(jk, "Sexy Anděl", "Archer", 150.0D, 1, 35.0D, 0.0D, 100.0D);
+        this.Wa = new Player(jk, "SEXY holka", "Warrior", 200.0D, 10, 30.0D, 0.0D, 100.0D);
         this.Wizzard();
         this.Archer();
         this.Warrior();

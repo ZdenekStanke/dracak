@@ -22,7 +22,7 @@ public class IOUtil {
 
                 for(int var7 = 0; var7 < var6; ++var7) {
                     char c = var5[var7];
-                    Thread.sleep(30L);
+                    Thread.sleep(1L);
                     System.out.print(c);
                 }
 
